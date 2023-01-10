@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1> 27.Write a JavaScript program to clamp number within the inclusive range specified by the
+        given boundary values a and b </h1>
+
+    <script>
+        //#Source https://bit.ly/2neWfJ2 
+        const clampNumber = (num, a, b) => Math.max(Math.min(num, Math.max(a, b)), Math.min(a, b));
+        console.log(clampNumber(2, 3, 5));
+        console.log(clampNumber(1, -1, -5));
+ś
+
+    </script>
+</body>
+
+</html>

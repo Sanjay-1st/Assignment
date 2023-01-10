@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>12</title>
+</head>
+
+<body>
+    <h1>12.Write a JavaScript program to get an array of function property names from own (and
+        optionally inherited) enumerable properties of an object. </h1>
+
+    <script>
+
+
+        // Person object has name, age, salary
+        // and print properties
+        // Except salary, all properties are enumerable
+        let Person = {
+            name: "Mahesh",
+            age: 25,
+            print: function () {
+                console.log(`${this.name} ${(this, age)}`);
+            },
+        };
+
+        // salary- non enumerable property
+        Object.defineProperty(Person, "salary", {
+            value: "Rs. 50,000",
+            enumerable: false,
+        });
+
+        // greeting- non enumerable function
+        Object.defineProperty(Person, "greeting", {
+            value: function () {
+                console.log("Welcome to GFG");
+            },
+            enumerable: false,
+        });
+
+        // arr contains all the enumerable
+        // properties of Person
+        let arr = Object.keys(Person);
+
+        // functionsArr contains enumerable
+        // function properties of Person.
+        // typeof returns an string representing
+        // data type.
+        // Using filter() method to filter the array
+
+        let functionsArr = arr.filter((key) => {
+            return typeof Person[key] === "function";
+        });
+
+        console.log(arr);
+        console.log(functionsArr);
+
+
+    </script>
+</body>
+
+</html>

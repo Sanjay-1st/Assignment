@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>
+        68.Write a JavaScript program to shuffle an array.
+    </h1>
+
+    <script>
+
+        function shuffleArray(array) {
+            let len = array.length,
+                currentIndex;
+            for (currentIndex = len - 1; currentIndex > 0; currentIndex--) {
+                let randIndex = Math.floor(Math.random() * (currentIndex + 1));
+                var temp = array[currentIndex];
+                array[currentIndex] = array[randIndex];
+                array[randIndex] = temp;
+            }
+        }
+        let a = [1, 2, 3, 4, 5];
+        console.log("Array before Shuffling", a);
+
+        console.log("Shuffling array");
+        shuffleArray(a);
+
+        console.log("Array after Shuffling", a);
+    </script>
+</body>
+
+</html>

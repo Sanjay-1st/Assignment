@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>
+        84.Write a JavaScript function to check whether an object contains given property.
+    </h1>
+
+    <script>
+
+        function hasKey(obj, key) {
+            return obj != null && hasOwnProperty.call(obj, key);
+        }
+        console.log(hasKey({ red: "#FF0000", green: "#00FF00", white: "#FFFFFF" }, "green"));
+
+    </script>
+</body>
+
+</html>

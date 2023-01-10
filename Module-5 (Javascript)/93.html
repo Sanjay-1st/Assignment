@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>
+        93. Write a JavaScript function to validate whether a given value type is NaN or not
+        (Explain with an Example).
+
+    </h1>
+
+    <script>
+
+        function is_nan(val) {
+            return val !== val;
+        }
+
+        console.log(is_nan(NaN));
+
+        console.log(is_nan('bar'));
+
+    </script>
+</body>
+
+</html>

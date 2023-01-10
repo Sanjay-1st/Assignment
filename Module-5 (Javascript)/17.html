@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>17.Write a JavaScript program to decode a string of data which has been encoded using
+        base-64 encoding. </h1>
+    <script>
+        // Define the string
+        var string = 'Hello World!';
+
+        // Encode the String
+        var encodedString = btoa(string);
+        console.log(encodedString); // Outputs: "SGVsbG8gV29ybGQh"
+
+        // Decode the String
+        var decodedString = atob(encodedString);
+        console.log(decodedString); // Outputs: "Hello World!"
+    </script>
+</body>
+
+</html>

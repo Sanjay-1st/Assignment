@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>
+        96. Write a JavaScript function to validate whether a given value is object or not (Explain
+        with an Example).
+    </h1>
+
+    <script>
+        function is_object(value) {
+            var datatype = typeof value;
+            return datatype === 'function' || datatype === 'object' && !!value;
+        }
+
+        console.log(is_object({ name: 'Robert' }));
+
+        console.log(is_object('bar'));
+
+        console.log(is_object(72));
+
+
+    </script>
+</body>
+
+</html>

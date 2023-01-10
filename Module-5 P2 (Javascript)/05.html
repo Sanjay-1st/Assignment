@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container-fluid {
+            background-color: black;
+            color: white;
+            height: 100vh;
+            width: 100vw;
+        }
+
+        .container {
+            padding-top: 20px;
+            background-color: rgb(32, 32, 32);
+            height: 100vh;
+        }
+
+        .box {
+            border: 1px solid red;
+            height: 40vh;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .box1,
+        .box2,
+        .box3 {
+            width: 200px;
+            height: 200px;
+            border: 1px solid red;
+        }
+
+        .box1 {
+            background-color: red;
+            transition-property: background-color;
+            transition-duration: 1s;
+            transition: all 2s ease;
+        }
+
+        .box1:hover {
+            background-color: green;
+            transform: rotate(180deg);
+     
+        }
+        .box2 {
+            background-color: green;
+            transition-property: background-color;
+            transition-duration: 1s;
+            transition: all 1s ease;
+        }
+
+        .box2:hover {
+            background-color: blue;
+            transform: scale(2)
+     
+        }
+        .box3{
+            background-color: blue;
+            transition-property: background-color;
+            transition-duration: 1s;
+            transition: all 2s ease;
+        }
+
+        .box3:hover {
+            background-color: red;
+            transform: rotate(-180deg);
+     
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid ">
+        <div class="container">
+            <h1>Write an examples of transitions and transform attributes of css3 in
+                web pages ?</h1>
+            <div class="box">
+                <div class="box1"></div>
+                <div class="box2"></div>
+                <div class="box3"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

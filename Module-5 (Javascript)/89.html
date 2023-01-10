@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>
+        89.How we can print the json data in table.
+        Json Data Example
+        [{"name":"Alfreds Futterkiste"},{"name":"Ana Trujillo Emparedados y
+        helados"},{"name":"Antonio Moreno Taqueria"},{"name":"Around the
+        Horn"},{"name":"Berglunds snabbkop"},{"name":"Blauer See
+        Delikatessen"},{"name":"Blondel pere et fils"},{"name":"Bolido Comidas
+        preparadas"},{"name":"Bon app'"},{"name":"Bottom-Dollar Marketse"},{"name":"B's
+        Beverages"},{"name":"Cactus Comidas para llevar"},{"name":"Centro comercial
+        Moctezuma"},{"name":"Chop-suey Chinese"},{"name":"Comercio
+        Mineiro"},{"name":"Consolidated Holdings"},{"name":"Drachenblut
+        Delikatessend"},{"name":"Du monde entier"},{"name":"Eastern
+        Connection"},{"name":"Ernst Handel"}]
+
+    </h1>
+    <table>
+        <thead>
+            <tr>
+                <td>Name</td>
+                <td>Name</td>
+            </tr>
+        </thead>
+        <tbody id="data">
+
+        </tbody>
+    </table>
+
+    <script>
+        let datas = [
+            { "name": "Alfreds Futterkiste" },
+            { "name": "Ana Trujillo Emparedados yhelados" },
+            { "name": "Antonio Moreno Taqueria" },
+            { "name": "Around theHorn" },
+            { "name": "Berglunds snabbkop" },
+            { "name": "Blauer SeeDelikatessen" },
+            { "name": "Blondel pere et fils" },
+            { "name": "Bolido Comidaspreparadas" },
+            { "name": "Bon app'" },
+            { "name": "Bottom-Dollar Marketse" },
+            { "name": "B'sBeverages" },
+            { "name": "Cactus Comidas para llevar" },
+            { "name": "Centro comercialMoctezuma" },
+            { "name": "Chop - suey Chinese" },
+            { "name": "ComercioMineiro" },
+            { "name": "Consolidated Holdings" },
+            { "name": "DrachenblutDelikatessend" },
+            { "name": "Du monde entier" },
+            { "name": "EasternConnection" },
+            { "name": "Ernst Handel" }
+        ]
+
+
+        fetch('https://jsonplaceholder.typicode.com/users/1')//'https://jsonplaceholder.typicode.com/users/1'
+            .then(data => data.json())
+            .then((data) => {
+                console.log(data)
+            })
+            .catch(err => console.log(err))
+
+
+    </script>
+</body>
+
+</html>

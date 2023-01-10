@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>19.Write a JavaScript program to remove elements from the end of an array until the
+        passed function returns true. Returns the remaining elements in the array.
+    </h1>
+    <script>
+        var array = [1, 2, 2, 3, 4, 5, 6, 6, 7, 8, 8, 8];
+
+        // Removing elements less than 5 and returning them 
+
+        var limiter = 5;
+
+        // function which slices the array taking limiter as parameter
+        var retrieveRemoved = function (array, limiter) {
+            var i;
+            for (i = 0; i < array.length; i++) {
+                // If the number value is greater or equal than limiter
+                if (array[i] >= limiter) {
+
+                    // It takes the array from 0th 
+                    // index to i, excluding it
+                    return array.slice(0, i);
+                }
+            }
+
+            return array.slice(i);
+        }
+        var removed = retrieveRemoved(array, limiter);
+        console.log("The removed elements: " + removed);
+    </script>
+</body>
+
+</html>

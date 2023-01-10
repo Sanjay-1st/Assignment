@@ -1,0 +1,49 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title> 02 - js </title>
+</head>
+
+<body>
+
+<script>
+// initialing value
+let max = 20;
+
+//function
+function fn(x){
+	var b = 0;
+	var a = 1;
+	var sum;
+	
+	for(i = 0; i < x -1; i++){
+		sum = a + b;
+		b = a;
+		a = sum;
+	}
+	return a;
+}
+
+//check vvalue is max
+function isless(x){
+	return(x < max);
+}
+
+//function return fn(x) if predicate
+function test(x){
+	let e = isless(x);
+	
+	if(e){
+		return fn(x);
+	}
+	else{
+		return x;
+	}
+}
+
+let ans = test(20);
+document.write(`This function returns ${ans}` + ans);
+
+</script>
+</body>
+</html>

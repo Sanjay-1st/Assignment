@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elastic Page</title>
+    <style>
+        * {
+            margin: 0;
+
+        }
+        
+
+        body {
+            background: linear-gradient(to right, rgba(252, 70, 106, 0.616), rgba(63, 94, 251, 0.637)),
+                url("https://images.unsplash.com/photo-1454496522488-7a8e488e8606?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=876&q=80");
+
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 100%;
+            color: white;
+        }
+
+        header {
+            position: sticky;
+            top: 0;
+        }
+
+        header nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 10vh;
+
+        }
+
+        header nav h1 {
+            text-transform: uppercase;
+            font-size: 30px;
+        }
+
+        header nav ul {
+            list-style: none;
+            display: flex;
+        }
+
+        header nav li {
+            padding: 10px;
+        }
+
+        header nav li a {
+            text-decoration: none;
+            color: white;
+            padding: 10px;
+            font-size: 20px;
+        }
+
+        a:hover {
+            cursor: pointer;
+            background-color: white;
+            color: black;
+        }
+
+        main {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 100vh;
+            
+            
+        }
+
+        main h1 {
+            text-transform: uppercase;
+            font-size: 50px;
+            margin: 30px;
+        }
+        
+        main button{
+            margin: 40px;
+            padding: 20px 0 0 0;
+            background: none;
+            border: none;
+        }
+        
+        main a{
+            background-color: white;
+            text-decoration: none;
+            text-transform: uppercase;
+            padding: 15px 20px;
+            border-radius: 30px;
+        }
+
+        footer {
+
+            background-color: rgb(199, 199, 199);
+            color: black;
+            height: 300px;
+
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            text-align: center;
+        }
+
+        footer .box {
+            padding-top: 100px;
+            width: 70%;
+            height: auto;
+            letter-spacing: 2px;
+        }
+        
+        footer h1{
+            text-transform: uppercase;
+            font-size: 40px;
+
+        }
+        footer p{
+            margin-top: 20px;
+            text-align: justify;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <h1>Elastic</h1>
+            <ul>
+                <li><a href="#home"> Home </a></li>
+                <li><a href="#home"> Slider</a></li>
+                <li><a href="#home">Pages </a></li>
+                <li><a href="#home">Portfolio </a></li>
+                <li><a href="#home"> Blog</a></li>
+                <li><a href="#home"> Shop</a></li>
+                <li><a href="#home"> Features</a></li>
+                <li><a href="#home">Elemnts </a></li>
+                <li><a href="#home">Contacts </a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <h1>Welcome to Elastic</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta,
+            earum sint, totam quod, magnam fuga.</p>
+            <button><a href="">Buy Now! </a></button>
+    </main>
+
+    <footer>
+        <div class="box">
+            <h1>Why Choose Elastic?</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed culpa laboriosam id, iure praesentium non
+                fugiat reiciendis optio cum dignissimos illum adipisci, ullam quasi explicabo maxime officiis odit
+                deleniti animi?Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde, velit nostrum! Amet molestias deserunt temporibus sequi mollitia, obcaecati suscipit minima repudiandae ex nam dolore quam asperiores sapiente officia id sint!</p>
+        </div>
+    </footer>
+</body>
+
+</html>

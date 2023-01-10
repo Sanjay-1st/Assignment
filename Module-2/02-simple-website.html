@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .row {
+            display: flex;
+            height: 70vh;
+        }
+
+        header {
+            background-color: green;
+            height: 100px;
+            width: 100%;
+            color: white;
+        
+          
+        }
+
+        aside {
+            background-color: red;
+            height: auto;
+            width: 20%;
+            color: white;
+
+        }
+
+        footer {
+
+
+            background-color: blue;
+            height: 100px;
+            width: 100%;
+            color: white;
+            
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Header</h1>
+        <p>Height:100px,Width:100%</p>
+    </header>
+    <div class="row">
+
+
+        <aside>
+            <h1>LeftPane</h1>
+            <p>Height:Fill area</p>
+            <p>Width:350px</p>
+        </aside>
+        <main>
+            <h1>Content Area</h1>
+            <p>Height:Fill area</p>
+            <p>Width:Fill area</p>
+        </main>
+    </div>
+    <footer>
+        <h1>Footer Area</h1>
+        <p>Height:100px,Width:100%</p>
+    </footer>
+</body>
+
+</html>

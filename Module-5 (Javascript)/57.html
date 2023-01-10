@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>
+        57.Write a JavaScript function to get the last element of an array. Passing a parameter 'n'
+        will return the last 'n' elements of the array. .
+        Test Data :
+        console.log(last([7, 9, 0, -2]));
+        console.log(last([7, 9, 0, -2],3));
+        console.log(last([7, 9, 0, -2],6));
+        Expected Output :
+        -2
+        [9, 0, -2]
+        [7, 9, 0, -2]
+    </h1>
+
+    <script>
+        var last = function (array, n) {
+            if (array == null)
+                return void 0;
+            if (n == null)
+                return array[array.length - 1];
+            return array.slice(Math.max(array.length - n, 0));
+        };
+
+        console.log(last([7, 9, 0, -2]));
+        console.log(last([7, 9, 0, -2], 3));
+        console.log(last([7, 9, 0, -2], 6));
+
+
+    </script>
+</body>
+
+</html>

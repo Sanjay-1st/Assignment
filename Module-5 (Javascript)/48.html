@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>
+        48.Write a JavaScript program to construct the following pattern, using a nested for loop.
+
+        *
+        * *
+        * * *
+        * * * *
+    </h1>Enter odd number: <input id="input">
+    <button onclick="drawCross()">Go</button>
+    <pre id="output"></pre>
+
+    <script>
+        function drawCross() {
+            var inputVal = +document.getElementById("input").value;
+            var html = "";
+            if (inputVal % 2 === 1) { // checks if the user's entered value is odd
+                for (var row = 0; row < inputVal; row++) {
+                    for (var col = 0; col < inputVal; col++) {
+                        if (row == col || row == inputVal - col - 1)
+                            html += "O";
+                        else
+                            html += ".";
+                    }
+                    html += "<br/>";
+                }
+                document.getElementById("output").innerHTML = html;
+            }
+        }
+
+
+
+
+    </script>
+</body>
+
+</html>

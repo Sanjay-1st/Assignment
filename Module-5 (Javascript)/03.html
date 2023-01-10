@@ -1,0 +1,29 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<title> 03 </title>
+</head>
+
+<body>
+
+	<script>
+		//3.Write a JavaScript program to reduce a given Array-like 
+		//into a value hash (keyed datastore).
+		var keys = [1, 2, 3];
+		var values = ["volvo", "computer", "science"];
+		var obj = {};
+
+		for (var i = 0; i < keys.length; i++) {
+			obj[keys[i]] = values[i];
+		}
+
+		for (var key of Object.keys(obj)) {
+			document.write(key + " => " + obj[key] + "</br>")
+		}
+
+
+	</script>
+</body>
+
+</html>

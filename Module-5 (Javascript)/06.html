@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>06</title>
+</head>
+
+<body>
+    <h1>6.Write a JavaScript program to replace all but the last number of characters with the
+        specified mask character. </h1>
+
+    <script>
+        const mask = (cc, num = 4, mask = '*') =>
+            ('' + cc).slice(0, -num).replace(/./g, mask) + ('' + cc).slice(-num);
+
+        console.log(mask(1234567890));
+        console.log(mask(1234567890, 3));
+        console.log(mask(1234567890, -4, '$'));
+
+        function mask2(cc, num = 4, mask = "*") {
+            ('' + cc).slice(0, -num).replace(/./g, mask) + ('' + cc).slice(-num);
+        }
+        
+        console.log(mask(1234567890));
+        console.log(mask(1234567890, 3));
+        console.log(mask(1234567890, -4, '$'));
+        
+    </script>
+</body>
+
+</html>
